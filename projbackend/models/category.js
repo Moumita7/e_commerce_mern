@@ -12,3 +12,5 @@ const categorySchema=new mongoose.Schema(
     },
     {timestamps:true} //when we add any new cetegoty the time and date will be save in our datbase 
 )
+
+module.exports=mongoose.model("Category",categorySchema)

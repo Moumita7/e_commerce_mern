@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const categorySchema=new mongoose.Schema(
+const CategorySchema=new mongoose.Schema(
     {
         name:{
             type:String,
@@ -13,4 +13,4 @@ const categorySchema=new mongoose.Schema(
     {timestamps:true} //when we add any new cetegoty the time and date will be save in our datbase 
 )
 
-module.exports=mongoose.model("Category",categorySchema)
+module.exports=mongoose.model("Category",CategorySchema)

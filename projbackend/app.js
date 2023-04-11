@@ -4,7 +4,16 @@ const express=require("express")
 var bodyParser = require('body-parser')
 var cookieParser = require('cookie-parser')
 var cors = require('cors')
+//
+
+//my routes
 const authRoutes=require("./routes/auth")
+const userRoutes=require("./routes/user")
+const categoryRoutes=require("./routes/category")
+const productRoutes=require("./routes/product")
+
+
+
 
 
 const app=express()
@@ -27,6 +36,10 @@ app.use(cors())
 
 //my routes
 app.use("/api",authRoutes)
+app.use("/api",userRoutes)
+app.use("/api",categoryRoutes)
+app.use("/api",productRoutes)
+
 
 
 

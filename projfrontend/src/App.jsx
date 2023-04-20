@@ -3,6 +3,7 @@ import Router from "./Router"
 
 
 function App() {
+  // console.log(import.meta.env.REACT_APP_TEST_CH)
 
   return (
 
